@@ -12,20 +12,40 @@ type
   { TfrmMain }
 
   TfrmMain = class(TForm)
-    imgClient: TImage;
+    imgExitRegister1: TImage;
+    imgGroupRegister1: TImage;
+    imgProductRegister1: TImage;
+    imgRegister: TImage;
+    imgGroupRegister: TImage;
+    imgExitRegister: TImage;
     imgSale: TImage;
+    imgSupplierRegister: TImage;
     imgStock: TImage;
     imgExit: TImage;
+    imgProductRegister: TImage;
+    imgSupplierRegister1: TImage;
+    pnpExitRegister: TPanel;
+    pnpExitRegister1: TPanel;
+    pnpGroupRegister1: TPanel;
+    pnpMainRegister: TPanel;
     pnpMainContent: TPanel;
+    pnpMainStock: TPanel;
+    pnpMainRegisterContent: TPanel;
+    pnpMainRegisterContent1: TPanel;
+    pnpProductRegister1: TPanel;
     pnpRegister: TPanel;
+    pnpGroupRegister: TPanel;
     pnpSales: TPanel;
+    pnpSupplierRegister: TPanel;
     pnpStock: TPanel;
     pnpExit: TPanel;
     pnpMain: TPanel;
+    pnpProductRegister: TPanel;
+    pnpSupplierRegister1: TPanel;
     pnpTitle: TPanel;
-    procedure pnpRegisterEnter(Sender: TObject);
-    procedure pnpRegisterMouseEnter(Sender: TObject);
-    procedure pnpRegisterMouseLeave(Sender: TObject);
+
+    procedure pnpMouseEnter(Sender: TObject);
+    procedure pnpMouseLeave(Sender: TObject);
   private
 
   public
@@ -41,30 +61,16 @@ implementation
 
 { TfrmMain }
 
-procedure TfrmMain.pnpRegisterMouseEnter(Sender: TObject);
+procedure TfrmMain.pnpMouseEnter(Sender: TObject);
 begin
-  MouseOn(Sender);
+  if Sender is TPanel then
+    (Sender as TPanel).Color := RGBToColor(43, 162, 182);
 end;
 
-procedure TfrmMain.pnpRegisterMouseLeave(Sender: TObject);
+procedure TfrmMain.pnpMouseLeave(Sender: TObject);
 begin
-  MouseOff(Sender);
-end;
-
-
-/// Functions MouseOn - MouseOff
-procedure TfrmMain.MouseOn(Sender: TObject);
-begin
-  if not (sender is TPanel) then
-    exit;
-  (sender as TPanel).Color := RGBToColor(43, 162, 182);
-end;
-
-function TfrmMain.MouseOff(Sender: TObject);
-begin
-  if not (sender is TPanel) then
-    exit;
-  (sender as TPanel).ParentColor := True;
+  if Sender is TPanel then
+    (Sender as TPanel).ParentColor := True;
 end;
 
 end.

@@ -1,23 +1,25 @@
 object frmMain: TfrmMain
-  Left = 339
-  Height = 714
-  Top = 250
-  Width = 1158
-  BorderStyle = bsNone
+  Left = 200
+  Height = 650
+  Top = 200
+  Width = 1104
+  BorderStyle = bsToolWindow
   Caption = 'Menu Lateral'
-  ClientHeight = 714
-  ClientWidth = 1158
+  ClientHeight = 650
+  ClientWidth = 1104
+  DesignTimePPI = 120
+  Scaled = False
   object pnpTitle: TPanel
     Left = 0
-    Height = 100
+    Height = 125
     Top = 0
-    Width = 1158
+    Width = 1104
     Align = alTop
     Caption = 'MENU'
     Color = 10311473
     Font.CharSet = ANSI_CHARSET
     Font.Color = clWhite
-    Font.Height = -32
+    Font.Height = -40
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentBackground = False
@@ -27,26 +29,26 @@ object frmMain: TfrmMain
   end
   object pnpMain: TPanel
     Left = 0
-    Height = 614
-    Top = 100
-    Width = 192
+    Height = 525
+    Top = 125
+    Width = 240
     Align = alLeft
-    ClientHeight = 614
-    ClientWidth = 192
+    ClientHeight = 525
+    ClientWidth = 240
     Color = 10311473
     ParentBackground = False
     ParentColor = False
     TabOrder = 1
     object pnpMainContent: TPanel
       Left = 1
-      Height = 50
+      Height = 62
       Top = 1
-      Width = 190
+      Width = 238
       Align = alTop
       Caption = 'PRINCIPAL'
       Color = 2672114
       Font.CharSet = ANSI_CHARSET
-      Font.Height = -15
+      Font.Height = -19
       Font.Pitch = fpVariable
       Font.Quality = fqDraft
       Font.Style = [fsBold]
@@ -57,18 +59,18 @@ object frmMain: TfrmMain
     end
     object pnpRegister: TPanel
       Left = 1
-      Height = 66
-      Top = 51
-      Width = 190
+      Height = 82
+      Top = 63
+      Width = 238
       Align = alTop
       Alignment = taRightJustify
       Caption = 'CADASTROS   '
-      ClientHeight = 66
-      ClientWidth = 190
+      ClientHeight = 82
+      ClientWidth = 238
       Color = 10311473
       Font.CharSet = ANSI_CHARSET
       Font.Color = clWhite
-      Font.Height = -15
+      Font.Height = -19
       Font.Pitch = fpVariable
       Font.Quality = fqDraft
       Font.Style = [fsBold]
@@ -76,13 +78,13 @@ object frmMain: TfrmMain
       ParentColor = False
       ParentFont = False
       TabOrder = 1
-      OnMouseEnter = pnpRegisterMouseEnter
-      OnMouseLeave = pnpRegisterMouseLeave
-      object imgClient: TImage
+      OnMouseEnter = pnpMouseEnter
+      OnMouseLeave = pnpMouseLeave
+      object imgRegister: TImage
         Left = 1
-        Height = 64
+        Height = 80
         Top = 1
-        Width = 64
+        Width = 80
         Align = alLeft
         Center = True
         Picture.Data = {
@@ -120,18 +122,18 @@ object frmMain: TfrmMain
     end
     object pnpStock: TPanel
       Left = 1
-      Height = 66
-      Top = 249
-      Width = 190
+      Height = 82
+      Top = 145
+      Width = 238
       Align = alTop
       Alignment = taRightJustify
       Caption = 'ESTOQUE   '
-      ClientHeight = 66
-      ClientWidth = 190
+      ClientHeight = 82
+      ClientWidth = 238
       Color = 10311473
       Font.CharSet = ANSI_CHARSET
       Font.Color = clWhite
-      Font.Height = -15
+      Font.Height = -19
       Font.Pitch = fpVariable
       Font.Quality = fqDraft
       Font.Style = [fsBold]
@@ -139,11 +141,13 @@ object frmMain: TfrmMain
       ParentColor = False
       ParentFont = False
       TabOrder = 2
+      OnMouseEnter = pnpMouseEnter
+      OnMouseLeave = pnpMouseLeave
       object imgStock: TImage
         Left = 1
-        Height = 64
+        Height = 80
         Top = 1
-        Width = 64
+        Width = 80
         Align = alLeft
         Center = True
         Picture.Data = {
@@ -181,18 +185,18 @@ object frmMain: TfrmMain
     end
     object pnpSales: TPanel
       Left = 1
-      Height = 66
-      Top = 183
-      Width = 190
+      Height = 82
+      Top = 227
+      Width = 238
       Align = alTop
       Alignment = taRightJustify
       Caption = 'VENDAS   '
-      ClientHeight = 66
-      ClientWidth = 190
+      ClientHeight = 82
+      ClientWidth = 238
       Color = 10311473
       Font.CharSet = ANSI_CHARSET
       Font.Color = clWhite
-      Font.Height = -15
+      Font.Height = -19
       Font.Pitch = fpVariable
       Font.Quality = fqDraft
       Font.Style = [fsBold]
@@ -200,11 +204,13 @@ object frmMain: TfrmMain
       ParentColor = False
       ParentFont = False
       TabOrder = 3
+      OnMouseEnter = pnpMouseEnter
+      OnMouseLeave = pnpMouseLeave
       object imgSale: TImage
         Left = 1
-        Height = 64
+        Height = 80
         Top = 1
-        Width = 64
+        Width = 80
         Align = alLeft
         Center = True
         Picture.Data = {
@@ -243,18 +249,18 @@ object frmMain: TfrmMain
     end
     object pnpExit: TPanel
       Left = 1
-      Height = 66
-      Top = 117
-      Width = 190
+      Height = 82
+      Top = 309
+      Width = 238
       Align = alTop
       Alignment = taRightJustify
       Caption = 'SAIR   '
-      ClientHeight = 66
-      ClientWidth = 190
+      ClientHeight = 82
+      ClientWidth = 238
       Color = 10311473
       Font.CharSet = ANSI_CHARSET
       Font.Color = clWhite
-      Font.Height = -15
+      Font.Height = -19
       Font.Pitch = fpVariable
       Font.Quality = fqDraft
       Font.Style = [fsBold]
@@ -262,11 +268,593 @@ object frmMain: TfrmMain
       ParentColor = False
       ParentFont = False
       TabOrder = 4
+      OnMouseEnter = pnpMouseEnter
+      OnMouseLeave = pnpMouseLeave
       object imgExit: TImage
         Left = 1
-        Height = 64
+        Height = 80
         Top = 1
-        Width = 64
+        Width = 80
+        Align = alLeft
+        Center = True
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B477261706869638E02000089504E47
+          0D0A1A0A0000000D49484452000000280000002808060000008CFEB86D000000
+          017352474200AECE1CE90000000467414D410000B18F0BFC6105000000097048
+          59730000EC380000EC3801712BCA3800000223494441545847DD98BD2E064114
+          861741A725D1504AFC86C27DB8070A1781822BE0324443A9A0102AA58A4E8282
+          4487F8799FCFB76BBF756677F6D7C69B3CD98F3D33E7DDD9D9393B1BB45D7DDD
+          63110D8879B12CA6C4B81811E859DC8A2B71212EC5BB684473624F3C884F4F88
+          A50D6D6BD38C38121FC232E1036DE983BE2AD390D8116FC24A5A04FAA24FFA2E
+          A5317126AC245540DFE428A4497123AC8EABE45A902B97B8AA26CC8560D27B24
+          991775DE5617E4F49A934C5EAB83262077AA78FCAB7C5AF342EE69E1146B94D5
+          B049F0608A55BECC225C157898151DF5778F6855F8D6E627B1294E3B7FA58B98
+          2D411B1FE161EDFBE78F28FC796AEB8640C3E2505831C03962101764C558DC89
+          F8E0054BC20A747122C2C42E9371731C19C9644C1A8B22D2BAB082D2481A889B
+          4C3BE70B9E22ED0A2B280BCB4815E6004F910E8415E443D25015E6004F918E85
+          15E44BDC242A6B0EF0D4FBA4B459ADBDC5E108B2C12922CAD28A781118DAEFC2
+          6FFEC73967E9CA508FA7D62F332C8A56908BC617EABCA58EB285B246276EB254
+          A943EC5BAD608B4711BE2C58E7E310432C2F0BD6790BBCFC522B5FB7926AC30B
+          2BD3C2A9D6BFF2A3BFDC346D8B4C0D8ABFDA7692DB4BA382CDB4D5511D908B9C
+          B934219A30490E7215125755E7EDA6EFDC2397149F2398BCAFC24A5284F0F39B
+          F79CF3118F3F6B5499C59CB6F491B9949411AB3CA5887A6999B0B817B4715608
+          97CA7C44A7982F88AC8FE8E7828FE88CDE7F53107C017EF5AB9B220602C00000
+          000049454E44AE426082
+        }
+      end
+    end
+  end
+  object pnpMainRegister: TPanel
+    Left = 240
+    Height = 525
+    Top = 125
+    Width = 240
+    Align = alLeft
+    ClientHeight = 525
+    ClientWidth = 240
+    Color = 10311473
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 2
+    object pnpMainRegisterContent: TPanel
+      Left = 1
+      Height = 62
+      Top = 1
+      Width = 238
+      Align = alTop
+      Caption = 'CADASTRO'
+      Color = 2672114
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -19
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentBackground = False
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 0
+    end
+    object pnpGroupRegister: TPanel
+      Left = 1
+      Height = 82
+      Top = 63
+      Width = 238
+      Align = alTop
+      Alignment = taRightJustify
+      Caption = 'GRUPO   '
+      ClientHeight = 82
+      ClientWidth = 238
+      Color = 10311473
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -19
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentBackground = False
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 1
+      OnMouseEnter = pnpMouseEnter
+      OnMouseLeave = pnpMouseLeave
+      object imgGroupRegister: TImage
+        Left = 1
+        Height = 80
+        Top = 1
+        Width = 80
+        Align = alLeft
+        Center = True
+      end
+    end
+    object pnpProductRegister: TPanel
+      Left = 1
+      Height = 82
+      Top = 145
+      Width = 238
+      Align = alTop
+      Alignment = taRightJustify
+      Caption = 'PRODUTO   '
+      ClientHeight = 82
+      ClientWidth = 238
+      Color = 10311473
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -19
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentBackground = False
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 2
+      OnMouseEnter = pnpMouseEnter
+      OnMouseLeave = pnpMouseLeave
+      object imgProductRegister: TImage
+        Left = 1
+        Height = 80
+        Top = 1
+        Width = 80
+        Align = alLeft
+        Center = True
+      end
+    end
+    object pnpSupplierRegister: TPanel
+      Left = 1
+      Height = 82
+      Top = 227
+      Width = 238
+      Align = alTop
+      Alignment = taRightJustify
+      Caption = 'FORNECEDOR   '
+      ClientHeight = 82
+      ClientWidth = 238
+      Color = 10311473
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -19
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentBackground = False
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 3
+      OnMouseEnter = pnpMouseEnter
+      OnMouseLeave = pnpMouseLeave
+      object imgSupplierRegister: TImage
+        Left = 1
+        Height = 80
+        Top = 1
+        Width = 80
+        Align = alLeft
+        Center = True
+      end
+    end
+    object pnpReturnRegister: TPanel
+      Left = 1
+      Height = 82
+      Top = 309
+      Width = 238
+      Align = alTop
+      Alignment = taRightJustify
+      Caption = 'VOLTAR   '
+      ClientHeight = 82
+      ClientWidth = 238
+      Color = 10311473
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -19
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentBackground = False
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 4
+      OnMouseEnter = pnpMouseEnter
+      OnMouseLeave = pnpMouseLeave
+      object imgReturnRegister: TImage
+        Left = 1
+        Height = 80
+        Top = 1
+        Width = 80
+        Align = alLeft
+        Center = True
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B477261706869638E02000089504E47
+          0D0A1A0A0000000D49484452000000280000002808060000008CFEB86D000000
+          017352474200AECE1CE90000000467414D410000B18F0BFC6105000000097048
+          59730000EC380000EC3801712BCA3800000223494441545847DD98BD2E064114
+          861741A725D1504AFC86C27DB8070A1781822BE0324443A9A0102AA58A4E8282
+          4487F8799FCFB76BBF756677F6D7C69B3CD98F3D33E7DDD9D9393B1BB45D7DDD
+          63110D8879B12CA6C4B81811E859DC8A2B71212EC5BB684473624F3C884F4F88
+          A50D6D6BD38C38121FC232E1036DE983BE2AD390D8116FC24A5A04FAA24FFA2E
+          A5317126AC245540DFE428A4497123AC8EABE45A902B97B8AA26CC8560D27B24
+          991775DE5617E4F49A934C5EAB83262077AA78FCAB7C5AF342EE69E1146B94D5
+          B049F0608A55BECC225C157898151DF5778F6855F8D6E627B1294E3B7FA58B98
+          2D411B1FE161EDFBE78F28FC796AEB8640C3E2505831C03962101764C558DC89
+          F8E0054BC20A747122C2C42E9371731C19C9644C1A8B22D2BAB082D2481A889B
+          4C3BE70B9E22ED0A2B280BCB4815E6004F910E8415E443D25015E6004F918E85
+          15E44BDC242A6B0EF0D4FBA4B459ADBDC5E108B2C12922CAD28A781118DAEFC2
+          6FFEC73967E9CA508FA7D62F332C8A56908BC617EABCA58EB285B246276EB254
+          A943EC5BAD608B4711BE2C58E7E310432C2F0BD6790BBCFC522B5FB7926AC30B
+          2BD3C2A9D6BFF2A3BFDC346D8B4C0D8ABFDA7692DB4BA382CDB4D5511D908B9C
+          B934219A30490E7215125755E7EDA6EFDC2397149F2398BCAFC24A5284F0F39B
+          F79CF3118F3F6B5499C59CB6F491B9949411AB3CA5887A6999B0B817B4715608
+          97CA7C44A7982F88AC8FE8E7828FE88CDE7F53107C017EF5AB9B220602C00000
+          000049454E44AE426082
+        }
+      end
+    end
+  end
+  object pnpMainStock: TPanel
+    Left = 480
+    Height = 525
+    Top = 125
+    Width = 240
+    Align = alLeft
+    ClientHeight = 525
+    ClientWidth = 240
+    Color = 10311473
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 3
+    object pnpMainStockContent: TPanel
+      Left = 1
+      Height = 62
+      Top = 1
+      Width = 238
+      Align = alTop
+      Caption = 'ESTOQUE'
+      Color = 2672114
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -19
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentBackground = False
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 0
+    end
+    object pnpPurchaseStock: TPanel
+      Left = 1
+      Height = 82
+      Top = 63
+      Width = 238
+      Align = alTop
+      Alignment = taRightJustify
+      Caption = 'COMPRA   '
+      ClientHeight = 82
+      ClientWidth = 238
+      Color = 10311473
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -19
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentBackground = False
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 1
+      OnMouseEnter = pnpMouseEnter
+      OnMouseLeave = pnpMouseLeave
+      object imgPurchaseStock: TImage
+        Left = 1
+        Height = 80
+        Top = 1
+        Width = 80
+        Align = alLeft
+        Center = True
+      end
+    end
+    object pnpInventoryStock: TPanel
+      Left = 1
+      Height = 82
+      Top = 145
+      Width = 238
+      Align = alTop
+      Alignment = taRightJustify
+      Caption = 'PRODUTO   '
+      ClientHeight = 82
+      ClientWidth = 238
+      Color = 10311473
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -19
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentBackground = False
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 2
+      OnMouseEnter = pnpMouseEnter
+      OnMouseLeave = pnpMouseLeave
+      object imgInventoryStock: TImage
+        Left = 1
+        Height = 80
+        Top = 1
+        Width = 80
+        Align = alLeft
+        Center = True
+      end
+    end
+    object pnpReportStock: TPanel
+      Left = 1
+      Height = 82
+      Top = 227
+      Width = 238
+      Align = alTop
+      Alignment = taRightJustify
+      Caption = 'RELATORIOS   '
+      ClientHeight = 82
+      ClientWidth = 238
+      Color = 10311473
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -19
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentBackground = False
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 3
+      OnMouseEnter = pnpMouseEnter
+      OnMouseLeave = pnpMouseLeave
+      object imgReportStock: TImage
+        Left = 1
+        Height = 80
+        Top = 1
+        Width = 80
+        Align = alLeft
+        Center = True
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B477261706869637603000089504E47
+          0D0A1A0A0000000D49484452000000280000002808060000008CFEB86D000000
+          017352474200AECE1CE90000000467414D410000B18F0BFC6105000000097048
+          597300000EC300000EC301C76FA8640000030B494441545847E5D85BC80C611C
+          C7F175CCD91B71211422BC2151E410E55048941B37C81B5128292917A25C88E4
+          78E17823E242A12414911BC7722A72A1941C4A0E399F7D7F333BFC3D9E796776
+          77E65DF1AB4F3BB33BEDFE67E779FEF3EC16FEB7F4C1168C08F6FEA2B4C7067C
+          C4777CC37E744555D304F3F0142ACCFA828D6884AA6434AEC12D4CCE62206C74
+          320D92EE38045D46B7B0FB98013713701BE731584FE491A6588D77700B7B8D95
+          68019BDE38067BEC57EC82C66DA6D1CCB41F147DD83E74814D3BAC4734697CE6
+          23D368CCD90FB88461B0698C3A3C813DD66721328D5BE018D88CC455D863EA93
+          AA409D719A742A3EC6652F2E6048B09761920AACC5292C09F6E23319B9F4BBB8
+          023B602BAE63A29EA856DC02D54C17E11EF4ADA9B5C4650A9A879BF9C52D7036
+          B6A363B0F72BCF8B8F36CBA1E63B1DB915EA16D8BAF81845DFE4546C0EF6FE8C
+          1AF1116848E492A449321CC7C3CDEA24A940AD48A2A877659954EF9754A0CD0D
+          1C0D372BCE459C0C374BCB62D86EDF168A1AF50A34C378DC823D2EAD879805DB
+          33F5DED1E724C62D702894CED0FE5DA829ABFDA81D3D833D3ECE7BAC451B44D1
+          CC5F869778843948BCA26E819FB10DFDCD7372027DA1D9ABD7759C7D3DA235E3
+          61F4808D7AA84ED63DFE327A22366E81114D16F7B94F50DF54744B3C0DFBBAEE
+          426361A393D2C9D9E35CAAE167D24E12DF725DE3B11F54DC284CC23468D5AC95
+          8A160EE7A0D460136E42C7A54E29B3382E1AE03BA0DF276FA06F6D27B498D589
+          2D801AFE52E8A44A8A5BA0C680067E391984331817EC85D1BE8A4F5AAEC5C657
+          60F4E35B03BF9CD816D2ABF858767C97F8057439F48D94D54CB34C7D63F00E34
+          A0B558D0184A1BCDC26EE166E5493349B45818002DAF5EE909134D04379AC9EA
+          716BE0AE8E728FEE28BBA1EEBF0A2DA1158FAF9F95EBB73E9845722D30CD254E
+          8A6E6759C6376C2A8A9AB12EB79AB4EF1B494B85ED81EE3AB944FF051E80EF4F
+          A524B9FCA68E8BFEC3B9025F21AE07988906FF0F51637B2E1EC357D85BE89FB2
+          56A86AB49058870F5061BAFC07915923CF2ABA27EBA7AB9665FF520A851F78B1
+          3FBEEBB93AA60000000049454E44AE426082
+        }
+      end
+    end
+    object pnpReturnStock: TPanel
+      Left = 1
+      Height = 82
+      Top = 309
+      Width = 238
+      Align = alTop
+      Alignment = taRightJustify
+      Caption = 'VOLTAR   '
+      ClientHeight = 82
+      ClientWidth = 238
+      Color = 10311473
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -19
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentBackground = False
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 4
+      OnMouseEnter = pnpMouseEnter
+      OnMouseLeave = pnpMouseLeave
+      object imgrReturnStock: TImage
+        Left = 1
+        Height = 80
+        Top = 1
+        Width = 80
+        Align = alLeft
+        Center = True
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B477261706869638E02000089504E47
+          0D0A1A0A0000000D49484452000000280000002808060000008CFEB86D000000
+          017352474200AECE1CE90000000467414D410000B18F0BFC6105000000097048
+          59730000EC380000EC3801712BCA3800000223494441545847DD98BD2E064114
+          861741A725D1504AFC86C27DB8070A1781822BE0324443A9A0102AA58A4E8282
+          4487F8799FCFB76BBF756677F6D7C69B3CD98F3D33E7DDD9D9393B1BB45D7DDD
+          63110D8879B12CA6C4B81811E859DC8A2B71212EC5BB684473624F3C884F4F88
+          A50D6D6BD38C38121FC232E1036DE983BE2AD390D8116FC24A5A04FAA24FFA2E
+          A5317126AC245540DFE428A4497123AC8EABE45A902B97B8AA26CC8560D27B24
+          991775DE5617E4F49A934C5EAB83262077AA78FCAB7C5AF342EE69E1146B94D5
+          B049F0608A55BECC225C157898151DF5778F6855F8D6E627B1294E3B7FA58B98
+          2D411B1FE161EDFBE78F28FC796AEB8640C3E2505831C03962101764C558DC89
+          F8E0054BC20A747122C2C42E9371731C19C9644C1A8B22D2BAB082D2481A889B
+          4C3BE70B9E22ED0A2B280BCB4815E6004F910E8415E443D25015E6004F918E85
+          15E44BDC242A6B0EF0D4FBA4B459ADBDC5E108B2C12922CAD28A781118DAEFC2
+          6FFEC73967E9CA508FA7D62F332C8A56908BC617EABCA58EB285B246276EB254
+          A943EC5BAD608B4711BE2C58E7E310432C2F0BD6790BBCFC522B5FB7926AC30B
+          2BD3C2A9D6BFF2A3BFDC346D8B4C0D8ABFDA7692DB4BA382CDB4D5511D908B9C
+          B934219A30490E7215125755E7EDA6EFDC2397149F2398BCAFC24A5284F0F39B
+          F79CF3118F3F6B5499C59CB6F491B9949411AB3CA5887A6999B0B817B4715608
+          97CA7C44A7982F88AC8FE8E7828FE88CDE7F53107C017EF5AB9B220602C00000
+          000049454E44AE426082
+        }
+      end
+    end
+  end
+  object pnpMainSale: TPanel
+    Left = 720
+    Height = 525
+    Top = 125
+    Width = 240
+    Align = alLeft
+    ClientHeight = 525
+    ClientWidth = 240
+    Color = 10311473
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 4
+    object pnpMainSaleContent: TPanel
+      Left = 1
+      Height = 62
+      Top = 1
+      Width = 238
+      Align = alTop
+      Caption = 'VENDAS'
+      Color = 2672114
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -19
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentBackground = False
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 0
+    end
+    object pnpPDVSale: TPanel
+      Left = 1
+      Height = 82
+      Top = 63
+      Width = 238
+      Align = alTop
+      Alignment = taRightJustify
+      Caption = 'PDV   '
+      ClientHeight = 82
+      ClientWidth = 238
+      Color = 10311473
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -19
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentBackground = False
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 1
+      OnMouseEnter = pnpMouseEnter
+      OnMouseLeave = pnpMouseLeave
+      object imgPDVSale: TImage
+        Left = 1
+        Height = 80
+        Top = 1
+        Width = 80
+        Align = alLeft
+        Center = True
+      end
+    end
+    object pnpCashierSale: TPanel
+      Left = 1
+      Height = 82
+      Top = 145
+      Width = 238
+      Align = alTop
+      Alignment = taRightJustify
+      Caption = 'CAIXA   '
+      ClientHeight = 82
+      ClientWidth = 238
+      Color = 10311473
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -19
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentBackground = False
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 2
+      OnMouseEnter = pnpMouseEnter
+      OnMouseLeave = pnpMouseLeave
+      object imgCashierSale: TImage
+        Left = 1
+        Height = 80
+        Top = 1
+        Width = 80
+        Align = alLeft
+        Center = True
+      end
+    end
+    object pnpReportSale: TPanel
+      Left = 1
+      Height = 82
+      Top = 227
+      Width = 238
+      Align = alTop
+      Alignment = taRightJustify
+      Caption = 'RELATORIOS   '
+      ClientHeight = 82
+      ClientWidth = 238
+      Color = 10311473
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -19
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentBackground = False
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 3
+      OnMouseEnter = pnpMouseEnter
+      OnMouseLeave = pnpMouseLeave
+      object imgReportSale: TImage
+        Left = 1
+        Height = 80
+        Top = 1
+        Width = 80
+        Align = alLeft
+        Center = True
+      end
+    end
+    object pnpReturnSale: TPanel
+      Left = 1
+      Height = 82
+      Top = 309
+      Width = 238
+      Align = alTop
+      Alignment = taRightJustify
+      Caption = 'VOLTAR   '
+      ClientHeight = 82
+      ClientWidth = 238
+      Color = 10311473
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -19
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentBackground = False
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 4
+      OnMouseEnter = pnpMouseEnter
+      OnMouseLeave = pnpMouseLeave
+      object imgrReturnSale: TImage
+        Left = 1
+        Height = 80
+        Top = 1
+        Width = 80
         Align = alLeft
         Center = True
         Picture.Data = {
