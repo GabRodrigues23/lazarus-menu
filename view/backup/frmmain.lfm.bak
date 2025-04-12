@@ -360,6 +360,7 @@ object frmMain: TfrmMain
     ParentBackground = False
     ParentColor = False
     TabOrder = 2
+    Visible = False
     object pnpMainRegisterContent: TPanel
       Left = 1
       Height = 62
@@ -399,6 +400,7 @@ object frmMain: TfrmMain
       ParentColor = False
       ParentFont = False
       TabOrder = 1
+      OnClick = pnpGroupRegisterClick
       OnMouseEnter = pnpMouseEnter
       OnMouseLeave = pnpMouseLeave
       object imgGroupRegister: TImage
@@ -687,6 +689,7 @@ object frmMain: TfrmMain
     ParentBackground = False
     ParentColor = False
     TabOrder = 3
+    Visible = False
     object pnpMainStockContent: TPanel
       Left = 1
       Height = 62
@@ -1008,6 +1011,7 @@ object frmMain: TfrmMain
     ParentBackground = False
     ParentColor = False
     TabOrder = 4
+    Visible = False
     object pnpMainSaleContent: TPanel
       Left = 1
       Height = 62

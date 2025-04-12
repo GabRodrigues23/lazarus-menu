@@ -8,6 +8,7 @@ object frmMain: TfrmMain
   ClientHeight = 650
   ClientWidth = 1104
   DesignTimePPI = 120
+  Position = poMainFormCenter
   Scaled = False
   object pnpTitle: TPanel
     Left = 0
@@ -28,7 +29,7 @@ object frmMain: TfrmMain
     TabOrder = 0
   end
   object pnpMain: TPanel
-    Left = 240
+    Left = 0
     Height = 525
     Top = 125
     Width = 240
@@ -349,7 +350,7 @@ object frmMain: TfrmMain
     end
   end
   object pnpMainRegister: TPanel
-    Left = 480
+    Left = 240
     Height = 525
     Top = 125
     Width = 240
@@ -400,6 +401,7 @@ object frmMain: TfrmMain
       ParentColor = False
       ParentFont = False
       TabOrder = 1
+      OnClick = pnpGroupRegisterClick
       OnMouseEnter = pnpMouseEnter
       OnMouseLeave = pnpMouseLeave
       object imgGroupRegister: TImage
@@ -677,7 +679,7 @@ object frmMain: TfrmMain
     end
   end
   object pnpMainStock: TPanel
-    Left = 720
+    Left = 480
     Height = 525
     Top = 125
     Width = 240
@@ -999,7 +1001,7 @@ object frmMain: TfrmMain
     end
   end
   object pnpMainSales: TPanel
-    Left = 0
+    Left = 720
     Height = 525
     Top = 125
     Width = 240

@@ -1,0 +1,29 @@
+object frmGroup: TfrmGroup
+  Left = 439
+  Height = 594
+  Top = 250
+  Width = 1085
+  Caption = 'frmGroup'
+  ClientHeight = 594
+  ClientWidth = 1085
+  DesignTimePPI = 120
+  Position = poMainFormCenter
+  object pnpTitle: TPanel
+    Left = 0
+    Height = 125
+    Top = 0
+    Width = 1085
+    Align = alTop
+    Caption = 'GRUPO'
+    Color = 10311473
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -40
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentBackground = False
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 0
+  end
+end

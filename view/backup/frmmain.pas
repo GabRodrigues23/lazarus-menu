@@ -55,6 +55,7 @@ type
     pnpTitle: TPanel;
 
     procedure pnpExitClick(Sender: TObject);
+    procedure pnpGroupRegisterClick(Sender: TObject);
     procedure pnpMouseEnter(Sender: TObject);
     procedure pnpMouseLeave(Sender: TObject);
     procedure pnpRegisterClick(Sender: TObject);
@@ -73,6 +74,7 @@ var
   main: TfrmMain;
 
 implementation
+  uses frmGroupRegister;
 
 {$R *.lfm}
 
@@ -104,6 +106,18 @@ end;
 procedure TfrmMain.pnpReturnRegisterClick(Sender: TObject);
 begin
   SelectMenu(0);
+end;
+
+procedure TfrmMain.pnpGroupRegisterClick(Sender: TObject);
+begin
+  frmGroup := TfrmGroup.Create(Self);
+  try
+    frmGroup.pnpTitle.Caption := 'Cadastro Grupo';
+    frmGroup.ShowModal;
+  finally
+    frmGroup.Release;
+    frmGroup := nil;
+  end;
 end;
 
 // Stock Menu
