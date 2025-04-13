@@ -54,16 +54,21 @@ type
     pnpReportStock: TPanel;
     pnpTitle: TPanel;
 
-    procedure pnpExitClick(Sender: TObject);
-    procedure pnpGroupRegisterClick(Sender: TObject);
     procedure pnpMouseEnter(Sender: TObject);
     procedure pnpMouseLeave(Sender: TObject);
+
     procedure pnpRegisterClick(Sender: TObject);
+    procedure pnpSalesClick(Sender: TObject);
+    procedure pnpStockClick(Sender: TObject);
+
+    procedure pnpExitClick(Sender: TObject);
     procedure pnpReturnRegisterClick(Sender: TObject);
     procedure pnpReturnSaleClick(Sender: TObject);
     procedure pnpReturnStockClick(Sender: TObject);
-    procedure pnpSalesClick(Sender: TObject);
-    procedure pnpStockClick(Sender: TObject);
+
+    procedure pnpGroupRegisterClick(Sender: TObject);
+    procedure pnpProductRegisterclick(Sender: TObject);
+
   private
     procedure SelectMenu(nMENU: integer);
   public
@@ -74,45 +79,41 @@ var
   main: TfrmMain;
 
 implementation
-  uses frmGroupRegister;
+  uses frmGroupRegister, frmProductRegister;
 
 {$R *.lfm}
 
 { TfrmMain }
 
+{Main Menu}
 // Change Menu Value
-// Main Menu
-procedure TfrmMain.pnpRegisterClick(Sender: TObject);
+procedure TfrmMain.pnpRegisterClick(Sender: TObject); // Register Menu
 begin
   SelectMenu(1);
 end;
 
-procedure TfrmMain.pnpStockClick(Sender: TObject);
+procedure TfrmMain.pnpStockClick(Sender: TObject); // Stock Menu
 begin
   SelectMenu(2);
 end;
 
-procedure TfrmMain.pnpSalesClick(Sender: TObject);
+procedure TfrmMain.pnpSalesClick(Sender: TObject); // Sales Menu
 begin
   SelectMenu(3);
 end;
 
-procedure TfrmMain.pnpExitClick(Sender: TObject);
+procedure TfrmMain.pnpExitClick(Sender: TObject); // Main Exit
 begin
   Application.Terminate;
 end;
 
-// Register Menu
-procedure TfrmMain.pnpReturnRegisterClick(Sender: TObject);
-begin
-  SelectMenu(0);
-end;
+{Register Menu}
 
-procedure TfrmMain.pnpGroupRegisterClick(Sender: TObject);
+procedure TfrmMain.pnpGroupRegisterClick(Sender: TObject); // Group Menu Button
 begin
   frmGroup := TfrmGroup.Create(Self);
   try
-    frmGroup.pnpTitle.Caption := 'Cadastro Grupo';
+    frmGroup.pnpTitle.Caption := 'Cadastro Grupos';
     frmGroup.ShowModal;
   finally
     frmGroup.Release;
@@ -120,19 +121,38 @@ begin
   end;
 end;
 
-// Stock Menu
+procedure TfrmMain.pnpProductRegisterclick(Sender: TObject); // Product Menu Button
+begin
+  frmProduct := TfrmProduct.Create(Self);
+  try
+    frmProduct.pnpTitle.Caption := 'Cadastro Produtos';
+    frmProduct.ShowModal;
+  finally
+    frmProduct.Release;
+    frmProduct := nil;
+  end;
+end;
+
+// Supplier Menu Button
+
+procedure TfrmMain.pnpReturnRegisterClick(Sender: TObject); // Return Button
+begin
+  SelectMenu(0);
+end;
+
+{Stock Menu}
 procedure TfrmMain.pnpReturnStockClick(Sender: TObject);
 begin
   SelectMenu(0);
 end;
 
-// Sales Menu
+{Sales Menu}
 procedure TfrmMain.pnpReturnSaleClick(Sender: TObject);
 begin
   SelectMenu(0);
 end;
 
-// Change Menu Page
+{Change Menu Page}
 procedure TfrmMain.SelectMenu(nMenu: integer);
 begin
   if nMENU = 0 then // Show Main Menu
@@ -176,7 +196,7 @@ begin
     end;
 end;
 
-// Mouse Panel Animation
+{Mouse Panel Animation}
 procedure TfrmMain.pnpMouseEnter(Sender: TObject);
 begin
   if Sender is TPanel then

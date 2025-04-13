@@ -2,11 +2,11 @@ object frmMain: TfrmMain
   Left = 200
   Height = 650
   Top = 200
-  Width = 1104
+  Width = 1100
   BorderStyle = bsToolWindow
   Caption = 'Menu Lateral'
   ClientHeight = 650
-  ClientWidth = 1104
+  ClientWidth = 1100
   DesignTimePPI = 120
   Position = poMainFormCenter
   Scaled = False
@@ -14,7 +14,7 @@ object frmMain: TfrmMain
     Left = 0
     Height = 125
     Top = 0
-    Width = 1104
+    Width = 1100
     Align = alTop
     Caption = 'MENU'
     Color = 10311473
@@ -472,6 +472,7 @@ object frmMain: TfrmMain
       ParentColor = False
       ParentFont = False
       TabOrder = 2
+      OnClick = pnpProductRegisterclick
       OnMouseEnter = pnpMouseEnter
       OnMouseLeave = pnpMouseLeave
       object imgProductRegister: TImage
