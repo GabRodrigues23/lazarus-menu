@@ -8,9 +8,11 @@
       <Unit>
         <Filename Value="menuLateral.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="34" Y="15"/>
-        <UsageCount Value="159"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="57" Y="13"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="view\frmmain.pas"/>
@@ -19,10 +21,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="frmMain"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="164"/>
-        <CursorPos X="34" Y="147"/>
-        <UsageCount Value="159"/>
+        <TopLine Value="124"/>
+        <CursorPos X="23" Y="139"/>
+        <UsageCount Value="200"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -30,24 +31,46 @@
         <Filename Value="view\pages\register\frmgroupregister.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmGroup"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="frmGroupRegister"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="2"/>
         <CursorPos X="7" Y="21"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="63"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="view\pages\register\frmproductregister.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmProduct"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frmProductRegister"/>
+        <EditorIndex Value="3"/>
+        <ExtraEditorCount Value="1"/>
+        <ExtraEditor1>
+          <EditorIndex Value="-1"/>
+          <WindowIndex Value="1"/>
+          <TopLine Value="-1"/>
+          <CursorPos X="-1" Y="-1"/>
+        </ExtraEditor1>
+        <UsageCount Value="61"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="view\pages\register\frmsupplierregister.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmSupplier"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frmSupplierRegister"/>
+        <EditorIndex Value="4"/>
+        <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="view\frmmain.pas"/>
-        <Caret Line="51" Column="13" TopLine="37"/>
-      </Position>
-      <Position>
-        <Filename Value="view\frmmain.pas"/>
-        <Caret Line="62" Column="13" TopLine="47"/>
-      </Position>
       <Position>
         <Filename Value="view\frmmain.pas"/>
         <Caret Line="70" Column="23" TopLine="42"/>
@@ -159,6 +182,14 @@
       <Position>
         <Filename Value="view\pages\register\frmgroupregister.pas"/>
         <Caret Line="21" Column="7"/>
+      </Position>
+      <Position>
+        <Filename Value="view\frmmain.pas"/>
+        <Caret Line="145" Column="20" TopLine="119"/>
+      </Position>
+      <Position>
+        <Filename Value="view\frmmain.pas"/>
+        <Caret Line="139" Column="23" TopLine="124"/>
       </Position>
     </JumpHistory>
     <RunParams>

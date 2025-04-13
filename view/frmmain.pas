@@ -68,6 +68,7 @@ type
 
     procedure pnpGroupRegisterClick(Sender: TObject);
     procedure pnpProductRegisterclick(Sender: TObject);
+    procedure pnpSupplierRegisterClick(Sender: TObject);
 
   private
     procedure SelectMenu(nMENU: integer);
@@ -79,7 +80,7 @@ var
   main: TfrmMain;
 
 implementation
-  uses frmGroupRegister, frmProductRegister;
+  uses frmGroupRegister, frmProductRegister, frmSupplierRegister;
 
 {$R *.lfm}
 
@@ -133,7 +134,17 @@ begin
   end;
 end;
 
-// Supplier Menu Button
+procedure TfrmMain.pnpSupplierRegisterClick(Sender: TObject); // Supplier Menu Button
+begin
+  frmSupplier := TfrmSupplier.Create(Self);
+  try
+    frmSupplier.pnpTitle.Caption := 'Cadastro Fornecedores';
+    frmSupplier.ShowModal;
+  finally
+    frmSupplier.Release;
+    frmSupplier := nil;
+  end;
+end;
 
 procedure TfrmMain.pnpReturnRegisterClick(Sender: TObject); // Return Button
 begin

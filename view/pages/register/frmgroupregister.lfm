@@ -14,7 +14,7 @@ object frmGroup: TfrmGroup
     Top = 0
     Width = 900
     Align = alTop
-    Caption = 'GRUPO'
+    Caption = 'GRUPOS'
     Color = 10311473
     Font.CharSet = ANSI_CHARSET
     Font.Color = clWhite

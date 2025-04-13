@@ -531,6 +531,7 @@ object frmMain: TfrmMain
       ParentColor = False
       ParentFont = False
       TabOrder = 3
+      OnClick = pnpSupplierRegisterClick
       OnMouseEnter = pnpMouseEnter
       OnMouseLeave = pnpMouseLeave
       object imgSupplierRegister: TImage

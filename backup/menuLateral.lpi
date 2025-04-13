@@ -46,8 +46,23 @@
         <Filename Value="view\pages\register\frmgroupregister.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmGroup"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="frmGroupRegister"/>
+      </Unit>
+      <Unit>
+        <Filename Value="view\pages\register\frmproductregister.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmProduct"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frmProductRegister"/>
+      </Unit>
+      <Unit>
+        <Filename Value="view\pages\register\frmsupplierregister.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmSupplier"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frmSupplierRegister"/>
       </Unit>
     </Units>
   </ProjectOptions>

@@ -1,20 +1,20 @@
 object frmGroup: TfrmGroup
   Left = 439
-  Height = 594
+  Height = 550
   Top = 250
-  Width = 1085
+  Width = 900
   Caption = 'frmGroup'
-  ClientHeight = 594
-  ClientWidth = 1085
+  ClientHeight = 550
+  ClientWidth = 900
   DesignTimePPI = 120
   Position = poMainFormCenter
   object pnpTitle: TPanel
     Left = 0
     Height = 125
     Top = 0
-    Width = 1085
+    Width = 900
     Align = alTop
-    Caption = 'GRUPO'
+    Caption = 'GRUPOS'
     Color = 10311473
     Font.CharSet = ANSI_CHARSET
     Font.Color = clWhite
