@@ -26,4 +26,136 @@ object frmGroup: TfrmGroup
     ParentFont = False
     TabOrder = 0
   end
+  object dbGridGroup: TDBGrid
+    Left = 0
+    Height = 350
+    Top = 125
+    Width = 900
+    Align = alTop
+    AutoEdit = False
+    AutoFillColumns = True
+    BorderStyle = bsNone
+    Columns = <    
+      item
+        SizePriority = 0
+        Title.Alignment = taCenter
+        Title.Caption = 'CÓDIGO'
+        Width = 200
+        FieldName = 'ID'
+      end    
+      item
+        Alignment = taCenter
+        Title.Alignment = taCenter
+        Title.Caption = 'DESCRIÇÃO'
+        Width = 479
+        FieldName = 'DESCRICAO'
+      end    
+      item
+        SizePriority = 0
+        Title.Alignment = taCenter
+        Title.Caption = 'ATIVO'
+        Width = 200
+        FieldName = 'FLAG'
+      end>
+    DataSource = DocumentController.dsGroup
+    DefaultRowHeight = 35
+    DoubleBuffered = True
+    FixedCols = 0
+    Options = [dgTitles, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgDisableDelete, dgTruncCellHints, dgThumbTracking]
+    ParentBiDiMode = False
+    ParentDoubleBuffered = False
+    Scrollbars = ssVertical
+    TabOrder = 1
+    TitleFont.Style = [fsBold]
+  end
+  object pnpButtonAdd: TPanel
+    Cursor = crHandPoint
+    Left = 16
+    Height = 60
+    Top = 483
+    Width = 150
+    BorderSpacing.Around = 1
+    BorderStyle = bsSingle
+    Caption = 'ADICIONAR'
+    Color = 9036153
+    DoubleBuffered = True
+    Font.Color = clBlack
+    Font.Height = -23
+    Font.Style = [fsBold]
+    ParentBackground = False
+    ParentBidiMode = False
+    ParentColor = False
+    ParentDoubleBuffered = False
+    ParentFont = False
+    TabOrder = 2
+    UseDockManager = False
+  end
+  object pnpButtonEdit: TPanel
+    Cursor = crHandPoint
+    Left = 176
+    Height = 60
+    Top = 483
+    Width = 150
+    BorderSpacing.Around = 1
+    BorderStyle = bsSingle
+    Caption = 'EDITAR'
+    Color = 7006192
+    DoubleBuffered = True
+    Font.Color = clBlack
+    Font.Height = -23
+    Font.Style = [fsBold]
+    ParentBackground = False
+    ParentBidiMode = False
+    ParentColor = False
+    ParentDoubleBuffered = False
+    ParentFont = False
+    TabOrder = 3
+    UseDockManager = False
+  end
+  object pnpButtonCancel: TPanel
+    Cursor = crHandPoint
+    Left = 728
+    Height = 60
+    Top = 483
+    Width = 150
+    BorderSpacing.Around = 1
+    BorderStyle = bsSingle
+    Caption = 'CANCELAR'
+    Color = 4933617
+    DoubleBuffered = True
+    Font.Color = clBlack
+    Font.Height = -23
+    Font.Style = [fsBold]
+    ParentBackground = False
+    ParentBidiMode = False
+    ParentColor = False
+    ParentDoubleBuffered = False
+    ParentFont = False
+    TabOrder = 4
+    UseDockManager = False
+    Visible = False
+  end
+  object pnpButtonSave: TPanel
+    Cursor = crHandPoint
+    Left = 568
+    Height = 60
+    Top = 483
+    Width = 150
+    BorderSpacing.Around = 1
+    BorderStyle = bsSingle
+    Caption = 'SALVAR'
+    Color = 9036153
+    DoubleBuffered = True
+    Font.Color = clBlack
+    Font.Height = -23
+    Font.Style = [fsBold]
+    ParentBackground = False
+    ParentBidiMode = False
+    ParentColor = False
+    ParentDoubleBuffered = False
+    ParentFont = False
+    TabOrder = 5
+    UseDockManager = False
+    Visible = False
+  end
 end

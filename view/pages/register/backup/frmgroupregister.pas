@@ -5,13 +5,19 @@ unit frmGroupRegister;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, StdCtrls;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, StdCtrls,
+  Grids, DBGrids;
 
 type
 
   { TfrmGroup }
 
   TfrmGroup = class(TForm)
+    dbGridGroup: TDBGrid;
+    pnpButtonAdd: TPanel;
+    pnpButtonSave: TPanel;
+    pnpButtonEdit: TPanel;
+    pnpButtonCancel: TPanel;
     pnpTitle: TPanel;
   private
 

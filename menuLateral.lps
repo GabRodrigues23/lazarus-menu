@@ -8,9 +8,10 @@
       <Unit>
         <Filename Value="menuLateral.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="57" Y="13"/>
+        <EditorIndex Value="5"/>
+        <CursorPos X="67" Y="27"/>
         <UsageCount Value="201"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="view\frmmain.pas"/>
@@ -19,8 +20,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="frmMain"/>
-        <TopLine Value="119"/>
-        <CursorPos X="23" Y="139"/>
+        <CursorPos X="26" Y="111"/>
         <UsageCount Value="201"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -34,8 +34,8 @@
         <UnitName Value="frmGroupRegister"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <CursorPos X="40" Y="14"/>
-        <UsageCount Value="64"/>
+        <CursorPos X="32" Y="14"/>
+        <UsageCount Value="136"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -43,6 +43,7 @@
         <Filename Value="view\pages\register\frmproductregister.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmProduct"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="frmProductRegister"/>
         <EditorIndex Value="2"/>
@@ -53,7 +54,7 @@
           <TopLine Value="-1"/>
           <CursorPos X="-1" Y="-1"/>
         </ExtraEditor1>
-        <UsageCount Value="62"/>
+        <UsageCount Value="134"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -61,91 +62,28 @@
         <Filename Value="view\pages\register\frmsupplierregister.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmSupplier"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="frmSupplierRegister"/>
         <EditorIndex Value="3"/>
-        <UsageCount Value="21"/>
+        <UsageCount Value="93"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="model\dbdocument.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DocumentController"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="dbDocument"/>
+        <EditorIndex Value="4"/>
+        <CursorPos X="11" Y="9"/>
+        <UsageCount Value="28"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="view\frmmain.pas"/>
-        <Caret Line="91" Column="15" TopLine="72"/>
-      </Position>
-      <Position>
-        <Filename Value="view\frmmain.pas"/>
-        <Caret Line="107" TopLine="78"/>
-      </Position>
-      <Position>
-        <Filename Value="view\frmmain.pas"/>
-        <Caret Line="114" TopLine="93"/>
-      </Position>
-      <Position>
-        <Filename Value="view\frmmain.pas"/>
-        <Caret Line="124" TopLine="95"/>
-      </Position>
-      <Position>
-        <Filename Value="view\frmmain.pas"/>
-        <Caret Line="127" Column="18" TopLine="117"/>
-      </Position>
-      <Position>
-        <Filename Value="view\frmmain.pas"/>
-        <Caret Line="135" Column="7" TopLine="120"/>
-      </Position>
-      <Position>
-        <Filename Value="view\frmmain.pas"/>
-        <Caret Line="143" Column="22" TopLine="120"/>
-      </Position>
-      <Position>
-        <Filename Value="view\frmmain.pas"/>
-        <Caret Line="117" Column="14" TopLine="116"/>
-      </Position>
-      <Position>
-        <Filename Value="view\frmmain.pas"/>
-        <Caret Line="129" Column="34" TopLine="87"/>
-      </Position>
-      <Position>
-        <Filename Value="view\frmmain.pas"/>
-        <Caret Line="110" Column="7" TopLine="89"/>
-      </Position>
-      <Position>
-        <Filename Value="view\frmmain.pas"/>
-        <Caret Line="112" Column="20" TopLine="85"/>
-      </Position>
-      <Position>
-        <Filename Value="view\frmmain.pas"/>
-        <Caret Line="111" Column="2" TopLine="96"/>
-      </Position>
-      <Position>
-        <Filename Value="view\frmmain.pas"/>
-        <Caret Line="113" Column="19" TopLine="98"/>
-      </Position>
-      <Position>
-        <Filename Value="view\frmmain.pas"/>
-        <Caret Line="58" Column="54" TopLine="53"/>
-      </Position>
-      <Position>
-        <Filename Value="view\frmmain.pas"/>
-        <Caret Line="113" Column="26" TopLine="98"/>
-      </Position>
-      <Position>
-        <Filename Value="view\frmmain.pas"/>
-        <Caret Line="118" Column="28" TopLine="109"/>
-      </Position>
-      <Position>
-        <Filename Value="view\frmmain.pas"/>
-        <Caret Line="113" Column="20" TopLine="98"/>
-      </Position>
-      <Position>
-        <Filename Value="view\pages\register\frmgroupregister.pas"/>
-        <Caret Line="21" Column="7"/>
-      </Position>
-      <Position>
-        <Filename Value="view\pages\register\frmgroupregister.pas"/>
-        <Caret Line="22" Column="7"/>
-      </Position>
       <Position>
         <Filename Value="view\pages\register\frmgroupregister.pas"/>
         <Caret Line="21" Column="7"/>
@@ -189,6 +127,82 @@
       <Position>
         <Filename Value="view\pages\register\frmgroupregister.pas"/>
         <Caret Line="22" Column="7"/>
+      </Position>
+      <Position>
+        <Filename Value="view\pages\register\frmgroupregister.pas"/>
+        <Caret Line="14" Column="32"/>
+      </Position>
+      <Position>
+        <Filename Value="model\dbdocument.pas"/>
+        <Caret Line="13" Column="44"/>
+      </Position>
+      <Position>
+        <Filename Value="model\dbdocument.pas"/>
+        <Caret Line="17" Column="44"/>
+      </Position>
+      <Position>
+        <Filename Value="model\dbdocument.pas"/>
+        <Caret Line="18" Column="44"/>
+      </Position>
+      <Position>
+        <Filename Value="view\pages\register\frmgroupregister.pas"/>
+        <Caret Line="14" Column="32"/>
+      </Position>
+      <Position>
+        <Filename Value="model\dbdocument.pas"/>
+        <Caret Line="20" Column="44"/>
+      </Position>
+      <Position>
+        <Filename Value="model\dbdocument.pas"/>
+        <Caret Line="21" Column="44"/>
+      </Position>
+      <Position>
+        <Filename Value="model\dbdocument.pas"/>
+        <Caret Line="20" Column="44"/>
+      </Position>
+      <Position>
+        <Filename Value="view\pages\register\frmgroupregister.pas"/>
+        <Caret Line="14" Column="32"/>
+      </Position>
+      <Position>
+        <Filename Value="model\dbdocument.pas"/>
+        <Caret Column="26"/>
+      </Position>
+      <Position>
+        <Filename Value="model\dbdocument.pas"/>
+        <Caret Line="27" Column="3" TopLine="5"/>
+      </Position>
+      <Position>
+        <Filename Value="model\dbdocument.pas"/>
+        <Caret Column="16"/>
+      </Position>
+      <Position>
+        <Filename Value="menuLateral.lpr"/>
+        <Caret Line="14" Column="34"/>
+      </Position>
+      <Position>
+        <Filename Value="model\dbdocument.pas"/>
+        <Caret Column="16"/>
+      </Position>
+      <Position>
+        <Filename Value="model\dbdocument.pas"/>
+        <Caret Line="27" Column="26" TopLine="5"/>
+      </Position>
+      <Position>
+        <Filename Value="menuLateral.lpr"/>
+        <Caret Line="27" Column="27"/>
+      </Position>
+      <Position>
+        <Filename Value="model\dbdocument.pas"/>
+        <Caret Line="27" Column="13" TopLine="5"/>
+      </Position>
+      <Position>
+        <Filename Value="menuLateral.lpr"/>
+        <Caret Line="27" Column="67"/>
+      </Position>
+      <Position>
+        <Filename Value="view\pages\register\frmgroupregister.pas"/>
+        <Caret Line="14" Column="32"/>
       </Position>
     </JumpHistory>
     <RunParams>

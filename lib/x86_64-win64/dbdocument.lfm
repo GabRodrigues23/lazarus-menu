@@ -1,0 +1,50 @@
+object DocumentController: TDocumentController
+  Left = 439
+  Height = 408
+  Top = 250
+  Width = 604
+  DesignTimePPI = 120
+  object zConn: TZConnection
+    ControlsCodePage = cCP_UTF8
+    ClientCodepage = 'UTF8'
+    Properties.Strings = (
+      'RawStringEncoding=DB_CP'
+      'codepage=UTF8'
+    )
+    Connected = True
+    DisableSavepoints = False
+    HostName = '127.0.0.1'
+    Port = 3050
+    Database = 'C:\Users\Gabriel.Rodrigues\Documents\Projetos\lazarus\lazarus-menu\MENUDB.FDB'
+    User = 'SYSDBA'
+    Password = 'masterkey'
+    Protocol = 'firebird'
+    Left = 16
+    Top = 8
+  end
+  object trCommit: TZTransaction
+    Connection = zConn
+    AutoCommit = True
+    Left = 72
+    Top = 8
+  end
+  object qrGroup: TZQuery
+    SortedFields = 'ID'
+    Connection = zConn
+    SequenceField = 'ID'
+    Transaction = trCommit
+    Active = True
+    SQL.Strings = (
+      'SELECT * FROM GRUPOS'
+    )
+    Params = <>
+    IndexFieldNames = 'ID Asc'
+    Left = 16
+    Top = 112
+  end
+  object dsGroup: TDataSource
+    DataSet = qrGroup
+    Left = 104
+    Top = 112
+  end
+end

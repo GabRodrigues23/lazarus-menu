@@ -6,13 +6,18 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, StdCtrls,
-  Grids;
+  Grids, DBGrids;
 
 type
 
   { TfrmGroup }
 
   TfrmGroup = class(TForm)
+    dbGridGroup: TDBGrid;
+    pnpButtonAdd: TPanel;
+    pnpButtonSave: TPanel;
+    pnpButtonEdit: TPanel;
+    pnpButtonCancel: TPanel;
     pnpTitle: TPanel;
   private
 

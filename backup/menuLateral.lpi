@@ -26,6 +26,15 @@
     </RunParams>
     <RequiredPackages>
       <Item>
+        <PackageName Value="FCL"/>
+      </Item>
+      <Item>
+        <PackageName Value="zcomponentdesign"/>
+      </Item>
+      <Item>
+        <PackageName Value="zcomponent"/>
+      </Item>
+      <Item>
         <PackageName Value="LCL"/>
       </Item>
     </RequiredPackages>
@@ -54,6 +63,7 @@
         <Filename Value="view\pages\register\frmproductregister.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmProduct"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="frmProductRegister"/>
       </Unit>
@@ -61,8 +71,16 @@
         <Filename Value="view\pages\register\frmsupplierregister.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmSupplier"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="frmSupplierRegister"/>
+      </Unit>
+      <Unit>
+        <Filename Value="model\dbdocument.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DocumentController"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="dbDocument"/>
       </Unit>
     </Units>
   </ProjectOptions>
@@ -74,7 +92,7 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="view;view\pages\register"/>
+      <OtherUnitFiles Value="view;view\pages\register;model"/>
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Linking>
